@@ -12,7 +12,7 @@
   // ========================================
   const CONFIG = {
     // OpenRouter API Configuration
-    apiKey: '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', // User will add their API key here
+    apiKey: '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', // User will add their API key here
     apiEndpoint: 'https://openrouter.ai/api/v1/chat/completions',
     model: 'minimax/minimax-m2:free', // Free model, can be changed to 'openai/gpt-3.5-turbo'
     
