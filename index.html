@@ -27,6 +27,9 @@
   <!-- Main Stylesheet - Deferred for Performance -->
   <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="css/style.css" rel="stylesheet"></noscript>
+
+  <!-- Chatbot Stylesheet -->
+  <link rel="stylesheet" href="css/chatbot.css">
 </head>
 
 <body>
@@ -478,7 +481,57 @@
     </svg>
   </button>
 
+  <!-- AI Chatbot Widget -->
+  <button class="chatbot-trigger" id="chatbot-trigger" aria-label="Open AI Assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">RB</div>
+        <div class="chatbot-header-text">
+          <h3>Rohail's AI Assistant</h3>
+          <p>Ask me anything!</p>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will be inserted here dynamically -->
+    </div>
+
+    <div class="chatbot-input-wrapper">
+      <div class="chatbot-input-container">
+        <input 
+          type="text" 
+          class="chatbot-input" 
+          id="chatbot-input" 
+          placeholder="Ask about Rohail's experience..."
+          autocomplete="off"
+        />
+        <button class="chatbot-send-btn" id="chatbot-send-btn" aria-label="Send message">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Main JavaScript - Deferred for Performance -->
   <script src="js/main.js" defer></script>
+
+  <!-- Chatbot JavaScript -->
+  <script src="js/chatbot.js" defer></script>
 </body>
 </html>
