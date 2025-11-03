@@ -2,207 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Rohail Butt | Software Engineer</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="web developer,full stack developer,web design,website design,website development,web page design" name="keywords">
-  <meta content="This is my portfolio website in which I can tell peoples which services i can provide and tell them our skills" name="description">
+  <title>Rohail Butt | Senior Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="senior software engineer,full stack developer,react,node.js,angular,aws,cybersecurity,enterprise software">
+  <meta name="description" content="Senior Software Engineer with 5+ years of experience in full-stack development, team leadership, and architecting robust software solutions in cybersecurity, marketing technology, and cloud-native systems.">
   <meta name="google-site-verification" content="kmDv5IWgMxCqmVmgHZY3nP5lGk8nJzR1Im3zjMUl7CY" />
+  
   <!-- Favicons -->
   <link href="img/faviconR.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
+  
+  <!-- Critical CSS Inlined for Performance -->
+  <style>
+    :root{--color-primary:#1e3a8a;--color-secondary:#3b82f6;--color-bg:#fff;--font-primary:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;--transition:all .3s ease;--shadow-md:0 4px 6px -1px rgba(0,0,0,.1)}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}body{font-family:var(--font-primary);color:#1f2937;background-color:var(--color-bg);line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{color:var(--color-secondary);text-decoration:none;transition:var(--transition)}ul{list-style:none}button{font-family:inherit;cursor:pointer;border:none;background:0 0}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}.navbar{position:fixed;top:0;left:0;width:100%;background-color:var(--color-bg);box-shadow:var(--shadow-md);z-index:1000;transition:var(--transition)}.navbar .container{display:flex;justify-content:space-between;align-items:center;height:70px}.nav-brand{font-size:1.5rem;font-weight:700;color:var(--color-primary)}.nav-toggle{display:none;flex-direction:column;width:30px;height:24px;justify-content:space-between}.nav-toggle span{width:100%;height:3px;background-color:var(--color-primary);border-radius:3px;transition:var(--transition)}.nav-menu{display:flex;gap:30px;align-items:center}.nav-link{color:#1f2937;font-weight:500;padding:8px 12px;border-radius:6px;transition:var(--transition)}.nav-link:hover,.nav-link.active{color:var(--color-secondary);background-color:rgba(59,130,246,.1)}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--color-primary) 0,var(--color-secondary) 100%);color:var(--color-bg);text-align:center;padding-top:70px}.hero-content{max-width:800px}.hero-title{font-size:3.5rem;font-weight:700;margin-bottom:15px}.hero-subtitle{font-size:2rem;font-weight:500;margin-bottom:20px;opacity:.95}.hero-description{font-size:1.25rem;margin-bottom:40px;opacity:.9;line-height:1.8}.hero-cta{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.btn{display:inline-block;padding:14px 32px;font-size:1rem;font-weight:600;border-radius:8px;transition:var(--transition);text-align:center}.btn-primary{background-color:var(--color-bg);color:var(--color-primary)}.btn-secondary{background-color:transparent;color:var(--color-bg);border:2px solid var(--color-bg)}@media (max-width:768px){.nav-toggle{display:flex}.nav-menu{position:absolute;top:70px;left:0;right:0;flex-direction:column;background-color:var(--color-bg);box-shadow:var(--shadow-md);padding:20px;gap:10px;max-height:0;overflow:hidden;transition:max-height .3s ease}.nav-menu.active{max-height:500px}.hero-title{font-size:2.5rem}.hero-subtitle{font-size:1.5rem}.hero-description{font-size:1.125rem}}@media (max-width:480px){.hero-title{font-size:2rem}.hero-subtitle{font-size:1.25rem}.hero-description{font-size:1rem}.hero-cta{flex-direction:column;gap:15px}.btn{width:100%}}
+  </style>
+  
+  <!-- Preconnect to Google Fonts for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Defer non-critical CSS -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  
+  <!-- Main Stylesheet - Deferred for Performance -->
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="css/style.css" rel="stylesheet"></noscript>
 </head>
 
-<body id="page-top">
-
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top"></a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="#home" class="nav-brand">Rohail Butt</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
   </nav>
-  <!--/ Nav End /-->
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/programmer.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h6 class="intro-title mb-4">I am Rohail Butt</h6>
-          <p class="intro-subtitle"><span class="text-slider-items">Software Engineer,JavaScript Developer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Rohail Butt</h1>
+        <h2 class="hero-subtitle">Senior Software Engineer</h2>
+        <p class="hero-description">5+ years of experience in full-stack development, team leadership, and architecting robust software solutions</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="https://www.linkedin.com/in/rohail-butt-496375149/" target="_blank" rel="noopener" class="btn btn-secondary">View LinkedIn</a>
         </div>
       </div>
     </div>
-  </div>
-  <!--/ Intro Skew End /-->
+  </section>
 
-  <section id="about" class="about-mf sect-pt4 route">
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="img/rohail.jpg" class="img-fluid rounded b-shadow-a" alt="rohail">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Rohail Butt</span></p>
-                      <p><span class="title-s">Profile: </span> <span>Software Engineer</span></p>
-                      <p><span class="title-s">Email: </span> <span>rohailbutt411@gmail.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>+923076497619</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML5</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS3</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>SASS</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>BOOTSTRAP4</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>REACT.JS</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>NEXT.JS</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Angular</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>NODE.JS</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>EXPRESS.JS</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>MONGODB.JS</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>FIREBASE</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>REACT NATIVE</span> <span class="pull-right">70%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Postgresql</span> <span class="pull-right">90%</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-                  <span>Electron.js</span> <span class="pull-right">70%</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-                <span>Git</span> <span class="pull-right">80%</span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-                </div>     
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    I'm a senior software engineer with 4+ years of experience in full-stack development and team leadership. 
-                  </p>
-                  <p class="lead">
-                    Proven track record of delivering high-quality software solutions, leading cross-functional teams, and driving innovation. Skilled in JavaScript, React, Node.js, and agile methodologies. Passionate about leveraging technology to solve complex problems and optimize processes. Strong communication and collaboration skills with a focus on achieving project goals and exceeding client expectations.
-                  </p>
-                  <p>
-                    Book a 30-minute Meeting: <a href="https://calendly.com/rohailbutt411/30min" target="_blank">click here</a>
-
-                  </p>
-                  
-                </div>
-              </div>
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A highly accomplished Senior Software Engineer</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="img/rohail.jpg" alt="Rohail Butt" loading="lazy">
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            A highly accomplished Senior Software Engineer with over <strong>5+ years of experience</strong> in full-stack development, team leadership, and architecting robust software solutions. Proven track record in delivering high-quality applications in cybersecurity, marketing technology, and the hospitality industry.
+          </p>
+          <p class="about-text">
+            Expertise in JavaScript, React, Angular, Node.js, Python, and building scalable cloud-native systems on AWS and GCP. Passionate about leveraging technology, including AI and LLMs, to solve complex problems, enhance security, and optimize processes.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Location:</span>
+              <span class="info-value">Pakistan</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span class="info-value">rohailbutt411@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone:</span>
+              <span class="info-value">+923076497619</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Calendly:</span>
+              <span class="info-value"><a href="https://calendly.com/rohailbutt411/30min" target="_blank" rel="noopener">Book a Meeting</a></span>
             </div>
           </div>
         </div>
@@ -210,392 +107,378 @@
     </div>
   </section>
 
-  <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
+  <!-- Experience Section -->
+  <section id="experience" class="section section-gray">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Services
-            </h3>
-            <p class="subtitle-a">
-              
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">5+ years of professional software engineering</p>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                I make static and dynamic websites using hottest frameworks like React / Angular / Node 
-              </p>
-            </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">December 2020 - Present</div>
+            <h3 class="timeline-title">Senior Software Engineer</h3>
+            <h4 class="timeline-company">INVOZONE | Lahore, Pakistan</h4>
+            <ul class="timeline-achievements">
+              <li>Led the development of multiple full-stack projects, resulting in an improvement in deployment speed</li>
+              <li>Implemented secure network access solutions through the RevBits Zero Trust Network, enhancing security for remote workers</li>
+              <li>Developed and deployed microservices architecture for enterprise-level applications, reducing system downtime</li>
+              <li>Collaborated with cross-functional teams to deliver software solutions on time, contributing to increase in customer satisfaction</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Mobile Development</h2>
-              <p class="s-description text-center">
-                I can also make native mobile apps using React Native
-              </p>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">December 2019 - December 2020</div>
+            <h3 class="timeline-title">Full Stack Engineer</h3>
+            <h4 class="timeline-company">ArtBot | United States</h4>
+            <ul class="timeline-achievements">
+              <li>Designed and implemented scalable full-stack applications, resulting in an increase in user engagement</li>
+              <li>Integrated third-party APIs to enhance application functionality, improving overall user experience</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">UI/UX</h2>
-              <p class="s-description text-center">
-                Most importantly, I focus on good user experience design and make it feel better
-              </p>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">September 2019 - December 2020</div>
+            <h3 class="timeline-title">Full Stack Developer</h3>
+            <h4 class="timeline-company">ARSUM'S TECH | Sialkot, Pakistan</h4>
+            <ul class="timeline-achievements">
+              <li>Contributed to decrease in bug reports through diligent development and testing</li>
+              <li>Scraped and processed data for business intelligence, improving decision-making processes</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--/ Section Services End /-->
 
-
-  <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
+  <!-- Skills Section -->
+  <section id="skills" class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-              I updated my portfolio with latest work and enriched portfolio to show
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technical expertise across the full stack</p>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/Softforest.png" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/Softforest.png" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Softforest</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">10 June. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://speedsyracewear.com/" >
-              <div class="work-img">
-                <img src="img/speedsyracewear.png" alt="ecommerce-app" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Speedsyracewear</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">5 Sep. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        <div class="skill-category">
+          <h3 class="skill-category-title">Frontend Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">RxJS</span>
+            <span class="skill-tag">WebSocket APIs</span>
+            <span class="skill-tag">Material UI</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://max5.herokuapp.com/" >
-              <div class="work-img">
-                <img src="img/max5.png" alt="ecommerce-app" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Max5 Ecommerce App</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">20 Nov. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        <div class="skill-category">
+          <h3 class="skill-category-title">Backend Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Nest.js</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">Sequelize</span>
           </div>
         </div>
-        
-        
-      </div>
-      <div class="row">
-        
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/SoftforestMobile.png" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/SoftforestMobile.png" alt="softforest-app" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Softforest Mobile App</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">App Development</span> / <span class="w-date">17 june. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        <div class="skill-category">
+          <h3 class="skill-category-title">Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS Batch</span>
+            <span class="skill-tag">AWS ECR</span>
+            <span class="skill-tag">AWS S3</span>
+            <span class="skill-tag">AWS Cognito</span>
+            <span class="skill-tag">AWS CloudWatch</span>
+            <span class="skill-tag">GCP Compute Engine</span>
+            <span class="skill-tag">GCP Cloud Run</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
           </div>
         </div>
-        
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://speedsy.com.speedsyracewear.com/" >
-              <div class="work-img">
-                <img src="img/motospeedsy.png" alt="ecommerce-app" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Moto Speedsy</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">15 Oct. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        <div class="skill-category">
+          <h3 class="skill-category-title">Database Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">NoSQL</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://socialapp-d8c8c.firebaseapp.com/" >
-              <div class="work-img">
-                <img src="img/social.PNG" alt="social" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Social App</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">10 Aug. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+        <div class="skill-category">
+          <h3 class="skill-category-title">AI / Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">ChatGPT API</span>
+            <span class="skill-tag">LangChain</span>
           </div>
         </div>
-        
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://burger-basics-eaec3.web.app/" >
-              <div class="work-img">
-                <img src="img/burger.PNG" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Burger Builder</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://www.rentalynx.com/">
-              <div class="work-img">
-                <img src="img/rental.png" alt="ecommerce-app" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Rentalynx</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">5 March. 2020</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://artbot.tv/">
-              <div class="work-img">
-                <img src="img/artbot.png" alt="ecommerce-app" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">ArtBot</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Development</span> / <span class="w-date">10 DEC. 2020</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!--/ Section Portfolio End /-->
-
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                
-                <div class="col-md-8">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> HOUSE #1432 SAMBRIAL ROAD DASKA,SIALKOT PAKISTAN</li>
-                      <li><span class="ion-ios-telephone"></span> +923076497619</li>
-                      <li><span class="ion-email"></span> rohailbutt411@gmail.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a target="_blank" href="https://www.facebook.com/rohailbutt.rohailbutt.14"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a target="_blank" href="https://www.linkedin.com/in/rohail-butt-496375149/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                      <li><a target="_blank" href="https://github.com/rohail411"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-                      <li><a target="_blank" href="https://stackoverflow.com/users/11267843/rohail-butt"><span class="ico-circle"><i class="fa-brands fa-stack-overflow"></i></span></a></li>
-                      
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">Security</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Zero Trust Networks</span>
+            <span class="skill-tag">PAM</span>
+            <span class="skill-tag">Zero-Knowledge Encryption</span>
+            <span class="skill-tag">MFA</span>
+            <span class="skill-tag">SSO</span>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>Rohail Butt</strong> <span id="year"></span>. All Rights Reserved</p>
-              
-            </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Enterprise-level solutions and innovations</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1: Mara Solutions -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Mara Solutions</h3>
+            <span class="project-tag">Review Management Platform</span>
+          </div>
+          <p class="project-description">
+            Built a system to automate hotel review aggregation, analysis, and response across 18+ platforms, reducing manual review response time by 65% for over 500 properties.
+          </p>
+          <ul class="project-highlights">
+            <li>Engineered AWS Batch jobs to scrape reviews and integrated LLMs (ChatGPT) for AI-driven response suggestions</li>
+            <li>Designed embeddable widgets for real-time ratings and secured authentication via Cognito</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Nest.js</span>
+            <span class="tech-badge">ChatGPT API</span>
+            <span class="tech-badge">AWS Batch</span>
+            <span class="tech-badge">AWS ECR</span>
+            <span class="tech-badge">AWS S3</span>
+            <span class="tech-badge">AWS Cognito</span>
+          </div>
+        </div>
+
+        <!-- Project 2: RevBits PAM -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">RevBits Privileged Access Management (PAM)</h3>
+            <span class="project-tag">Cybersecurity Platform</span>
+          </div>
+          <p class="project-description">
+            Led the design and implementation of a unified, multi-module cybersecurity platform to secure privileged credentials, sessions, and access across on-premises, cloud, and air-gapped environments.
+          </p>
+          <ul class="project-highlights">
+            <li>Oversaw the development of seven integrated modules, including Privileged Access, Session, Password, and CI/CD secrets management</li>
+            <li>Implemented a jump-server architecture to prevent direct asset access, enabling video and keystroke session recording for full compliance</li>
+            <li>Developed patented zero-knowledge browser encryption to ensure keys remain client-side, strengthening credential security</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-badge">Microservices</span>
+            <span class="tech-badge">Zero-Knowledge Encryption</span>
+            <span class="tech-badge">MFA</span>
+            <span class="tech-badge">SSO</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Azure</span>
+            <span class="tech-badge">GCP</span>
+          </div>
+        </div>
+
+        <!-- Project 3: RevBits ZTN -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">RevBits Zero Trust Network (ZTN)</h3>
+            <span class="project-tag">Zero Trust Security</span>
+          </div>
+          <p class="project-description">
+            Engineered a Zero Trust platform to replace VPNs with granular, least-privilege access controls, slashing breach risks by 70% while enabling frictionless access for remote teams.
+          </p>
+          <ul class="project-highlights">
+            <li>Built an auto-scaling cloud architecture for global distribution, full session control, and BYOD support with MFA/biometrics</li>
+            <li>Implemented Remote Browser Isolation (RBI) with Chromium/Firefox, blocking malicious sites via NVR</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">C++</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">GCP</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Open Letter Connect -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Open Letter Connect</h3>
+            <span class="project-tag">Direct Mail Automation & CRM</span>
+          </div>
+          <p class="project-description">
+            Developed a full-stack platform that syncs direct mail campaigns with CRMs like HubSpot and Salesforce, boosting response rates by 3x.
+          </p>
+          <ul class="project-highlights">
+            <li>Built a drag-and-drop template builder and an address verification system that achieved 98% deliverability</li>
+            <li>Clients reported 50% faster campaign execution and increased ROI through personalized mailers</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Nest.js</span>
+            <span class="tech-badge">AWS Batch</span>
+            <span class="tech-badge">AWS S3</span>
+            <span class="tech-badge">GitHub Actions</span>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   </section>
-  <!--/ Section Contact-footer End /-->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional credentials and achievements</p>
+      </div>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <h3 class="cert-title">JavaScript (Intermediate)</h3>
+          <p class="cert-issuer">HackerRank</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <h3 class="cert-title">JavaScript (Basic)</h3>
+          <p class="cert-issuer">HackerRank</p>
+        </div>
+      </div>
+      <div class="education-section">
+        <h3 class="education-title">Education</h3>
+        <div class="education-list">
+          <div class="education-item">
+            <h4>Bachelor's Degree in Computer Science</h4>
+            <p>University of Gujrat, Pakistan</p>
+          </div>
+          <div class="education-item">
+            <h4>Intermediate in FSc Pre-Engineering</h4>
+            <p>Govt College Daska, Sialkot, Pakistan</p>
+          </div>
+          <div class="education-item">
+            <h4>Matriculation in Physics</h4>
+            <p>Govt High School Daska, Sialkot, Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <!-- Contact Section -->
+  <section id="contact" class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss your next project</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Daska, Sialkot, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:rohailbutt411@gmail.com">rohailbutt411@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p><a href="tel:+923076497619">+923076497619</a></p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/rohail-butt-496375149/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/rohail411" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://stackoverflow.com/users/11267843/rohail-butt" target="_blank" rel="noopener" aria-label="Stack Overflow">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.093-10.473-2.201zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/rohailbutt.rohailbutt.14" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Rohail Butt. All Rights Reserved.</p>
+    </div>
+  </footer>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript - Deferred for Performance -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
