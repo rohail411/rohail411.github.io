@@ -11,9 +11,9 @@
   // Configuration
   // ========================================
   const CONFIG = {
-    // OpenRouter API Configuration
-    apiKey: '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', // User will add their API key here
-    apiEndpoint: 'https://openrouter.ai/api/v1/chat/completions',
+    // Backend API Configuration
+    // Replace with your deployed Vercel API URL after deployment
+    apiEndpoint: 'https://rohail-gpt.vercel.app/api/chat', // Change to your Vercel URL: https://your-api.vercel.app/api/chat
     model: 'minimax/minimax-m2:free', // Free model, can be changed to 'openai/gpt-3.5-turbo'
     
     // App Configuration
@@ -143,9 +143,9 @@ COMMUNICATION GUIDELINES:
       suggestions: document.querySelectorAll('.suggestion-btn')
     };
 
-    // Check if API key is configured
-    if (!CONFIG.apiKey) {
-      showApiKeyNotice();
+    // Check if API endpoint is configured
+    if (!CONFIG.apiEndpoint || CONFIG.apiEndpoint.includes('localhost')) {
+      showApiEndpointNotice();
     }
 
     // Attach event listeners
@@ -234,13 +234,13 @@ COMMUNICATION GUIDELINES:
   }
 
   // ========================================
-  // Show API Key Notice
+  // Show API Endpoint Notice
   // ========================================
-  function showApiKeyNotice() {
+  function showApiEndpointNotice() {
     const noticeHTML = `
       <div class="chatbot-api-notice">
-        <strong>⚠️ API Key Required</strong>
-        Please add your OpenRouter API key in the chatbot.js file to enable the AI assistant.
+        <strong>⚠️ Backend API Required</strong>
+        Please deploy the chatbot-api to Vercel and update the apiEndpoint in chatbot.js
       </div>
     `;
     
@@ -257,9 +257,9 @@ COMMUNICATION GUIDELINES:
     
     if (!message || isTyping) return;
 
-    // Check if API key is configured
-    if (!CONFIG.apiKey) {
-      showError('Please configure your OpenRouter API key in chatbot.js');
+    // Check if API endpoint is configured
+    if (!CONFIG.apiEndpoint) {
+      showError('Please configure your API endpoint in chatbot.js');
       return;
     }
 
@@ -307,7 +307,7 @@ COMMUNICATION GUIDELINES:
   }
 
   // ========================================
-  // Get AI Response from OpenRouter
+  // Get AI Response from Backend API
   // ========================================
   async function getAIResponse(userMessage) {
     const messages = [
@@ -324,37 +324,29 @@ COMMUNICATION GUIDELINES:
 
     const requestBody = {
       model: CONFIG.model,
-      messages: messages,
-      temperature: 0.7,
-      max_tokens: 500,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0
+      messages: messages
     };
 
     const response = await fetch(CONFIG.apiEndpoint, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${CONFIG.apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': CONFIG.siteUrl,
-        'X-Title': CONFIG.siteName
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(requestBody)
     });
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.error?.message || `API Error: ${response.status}`);
+      throw new Error(errorData.error || `API Error: ${response.status}`);
     }
 
     const data = await response.json();
     
-    if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+    if (!data.message) {
       throw new Error('Invalid response format from API');
     }
 
-    return data.choices[0].message.content.trim();
+    return data.message;
   }
 
   // ========================================
