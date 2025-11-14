@@ -813,6 +813,7 @@ button {
   }
 
   .nav-menu {
+    display: none;
     position: absolute;
     top: 70px;
     left: 0;
@@ -829,6 +830,7 @@ button {
 
   .nav-menu.active {
     max-height: 500px;
+    display: flex;
   }
 
   .hero-title {

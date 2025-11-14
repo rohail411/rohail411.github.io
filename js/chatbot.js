@@ -154,7 +154,7 @@ COMMUNICATION GUIDELINES:
     // Show welcome message
     showWelcomeMessage();
 
-    console.log('Chatbot initialized successfully');
+    // console.log('Chatbot initialized successfully');
   }
 
   // ========================================
