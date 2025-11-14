@@ -14,7 +14,7 @@
     // Backend API Configuration
     // Replace with your deployed Vercel API URL after deployment
     apiEndpoint: 'https://rohail-gpt.vercel.appf/api/chat', // Change to your Vercel URL: https://your-api.vercel.app/api/chat
-    model: 'google/gemini-2.0-flash-exp:free', // Free model, can be changed to 'openai/gpt-3.5-turbo'
+    model: 'openai/gpt-oss-20b:free', // Free model, can be changed to 'openai/gpt-3.5-turbo'
     
     // App Configuration
     siteName: 'Rohail Butt Portfolio',
