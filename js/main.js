@@ -56,16 +56,34 @@
       e.preventDefault();
       const targetId = this.getAttribute('href');
       
+      // Handle "Ask AI" link - open chatbot instead of scrolling
+      if (this.id === 'askAiLink' || targetId === '#ask-ai') {
+        const chatbotTrigger = document.getElementById('chatbot-trigger');
+        if (chatbotTrigger) {
+          chatbotTrigger.click();
+        }
+        return;
+      }
+      
       if (targetId && targetId.startsWith('#')) {
         const targetSection = document.querySelector(targetId);
         if (targetSection) {
           const navHeight = navbar.offsetHeight;
           const targetPosition = targetSection.offsetTop - navHeight;
           
+          // Update active state immediately
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+          this.classList.add('active');
+          
           window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
           });
+          
+          // Update active state again after scroll completes (for edge cases)
+          setTimeout(() => {
+            updateActiveNavLink();
+          }, 500);
         }
       }
     });
@@ -76,14 +94,41 @@
   // ========================================
   function updateActiveNavLink() {
     const scrollPosition = window.scrollY + navbar.offsetHeight + 100;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
 
-    sections.forEach(section => {
+    sections.forEach((section, index) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
       const sectionId = section.getAttribute('id');
+      const sectionBottom = sectionTop + sectionHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      // Check if we're at the last section or near the bottom of the page
+      const isLastSection = index === sections.length - 1;
+      const isNearBottom = window.scrollY + windowHeight >= documentHeight - 50;
+
+      // For the last section, also check if we're near the bottom of the page
+      if (isLastSection && isNearBottom) {
         navLinks.forEach(link => {
+          // Skip "Ask AI" link - it's not a scrollable section
+          if (link.id === 'askAiLink' || link.getAttribute('href') === '#ask-ai') {
+            return;
+          }
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+        return;
+      }
+
+      // For other sections, use the normal scroll position check
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        navLinks.forEach(link => {
+          // Skip "Ask AI" link - it's not a scrollable section
+          if (link.id === 'askAiLink' || link.getAttribute('href') === '#ask-ai') {
+            return;
+          }
           link.classList.remove('active');
           if (link.getAttribute('href') === `#${sectionId}`) {
             link.classList.add('active');
