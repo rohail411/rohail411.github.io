@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohail Butt - Senior Software Engineer - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      padding: 20px;
+    }
+    
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      border-bottom: 3px solid #1e3a8a;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .header h1 {
+      font-size: 28pt;
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    
+    .header h2 {
+      font-size: 14pt;
+      color: #3b82f6;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 10pt;
+      color: #555;
+    }
+    
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    /* Sections */
+    .section {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+    
+    .section-title {
+      font-size: 14pt;
+      font-weight: bold;
+      color: #1e3a8a;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    /* Professional Summary */
+    .summary {
+      text-align: justify;
+      font-size: 11pt;
+      line-height: 1.7;
+      color: #444;
+    }
+    
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    
+    .skill-category {
+      margin-bottom: 12px;
+    }
+    
+    .skill-category h4 {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+    }
+    
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    
+    .skill-tag {
+      background: #f0f4ff;
+      color: #1e3a8a;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 9.5pt;
+      border: 1px solid #cbd5e1;
+    }
+    
+    /* Experience */
+    .experience-item {
+      margin-bottom: 18px;
+      page-break-inside: avoid;
+    }
+    
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    
+    .experience-header h3 {
+      font-size: 12pt;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+    
+    .experience-header .date {
+      font-size: 10pt;
+      color: #666;
+      font-style: italic;
+    }
+    
+    .company {
+      font-size: 11pt;
+      color: #3b82f6;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .achievements {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .achievements li {
+      margin-bottom: 6px;
+      padding-left: 20px;
+      position: relative;
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: #444;
+    }
+    
+    .achievements li:before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+      font-weight: bold;
+    }
+    
+    /* Projects */
+    .project-item {
+      margin-bottom: 18px;
+      page-break-inside: avoid;
+    }
+    
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+    
+    .project-header h3 {
+      font-size: 12pt;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+    
+    .project-tag {
+      font-size: 9.5pt;
+      color: #666;
+      font-style: italic;
+    }
+    
+    .project-description {
+      font-size: 10.5pt;
+      color: #555;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+    
+    .project-highlights {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .project-highlights li {
+      margin-bottom: 5px;
+      padding-left: 20px;
+      position: relative;
+      font-size: 10pt;
+      line-height: 1.4;
+      color: #444;
+    }
+    
+    .project-highlights li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+      font-weight: bold;
+    }
+    
+    .tech-stack {
+      margin-top: 8px;
+      font-size: 9pt;
+      color: #666;
+    }
+    
+    .tech-stack strong {
+      color: #1e3a8a;
+    }
+    
+    /* Education & Certifications */
+    .education-item, .cert-item {
+      margin-bottom: 12px;
+    }
+    
+    .education-item h4, .cert-item h4 {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 3px;
+    }
+    
+    .education-item p, .cert-item p {
+      font-size: 10pt;
+      color: #666;
+    }
+    
+    /* Print Styles */
+    @media print {
+      body {
+        padding: 0;
+      }
+      
+      .resume-container {
+        max-width: 100%;
+      }
+      
+      .section {
+        page-break-inside: avoid;
+      }
+      
+      .experience-item, .project-item {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Header -->
+    <div class="header">
+      <h1>ROHAIL BUTT</h1>
+      <h2>Senior Software Engineer</h2>
+      <div class="contact-info">
+        <span>📧 rohailbutt411@gmail.com</span>
+        <span>📱 +923076497619</span>
+        <span>🌐 rohail411.github.io</span>
+        <span>💼 linkedin.com/in/rohail-butt</span>
+        <span>💻 github.com/rohail411</span>
+        <span>📍 Pakistan</span>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="summary">
+        <p>
+          Accomplished Senior Software Engineer with 5+ years of experience building enterprise AI platforms, 
+          cybersecurity solutions, and scalable cloud architectures. Expert in LLM integration, Zero Trust Networks, 
+          and full-stack development—delivering solutions trusted by 10,000+ businesses worldwide. Proven track 
+          record in architecting robust software solutions across cybersecurity, marketing technology, and hospitality 
+          industries. Specialized in building production-grade AI applications using GPT models, LangChain, vector 
+          embeddings, and fine-tuning. Passionate about leveraging cutting-edge technology to solve complex problems, 
+          enhance security, and optimize business processes.
+        </p>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Programming Languages</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Frontend Development</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">RxJS</span>
+            <span class="skill-tag">Material UI</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Backend Development</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Nest.js</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">WebSocket</span>
+            <span class="skill-tag">Sequelize</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>AI / Machine Learning</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">GPT-4o / GPT-5</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Vector Embeddings</span>
+            <span class="skill-tag">Fine-Tuning</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">Structured Outputs</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Semantic Search</span>
+            <span class="skill-tag">Offline AI Models</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Cloud & DevOps</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS (Batch, ECR, S3, Cognito, CloudWatch)</span>
+            <span class="skill-tag">GCP (Compute Engine, Cloud Run)</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Databases</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">SQL / NoSQL</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Security</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Zero Trust Networks</span>
+            <span class="skill-tag">PAM</span>
+            <span class="skill-tag">Zero-Knowledge Encryption</span>
+            <span class="skill-tag">MFA / SSO</span>
+            <span class="skill-tag">Remote Browser Isolation</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Other Technologies</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">HubSpot API</span>
+            <span class="skill-tag">Salesforce API</span>
+            <span class="skill-tag">USPS API</span>
+            <span class="skill-tag">Chromium / Firefox</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section">
+      <h2 class="section-title">Professional Experience</h2>
+      
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Senior Software Engineer</h3>
+          <span class="date">December 2020 - Present</span>
+        </div>
+        <div class="company">INVOZONE | Lahore, Pakistan</div>
+        <ul class="achievements">
+          <li>Led the development of multiple full-stack projects, resulting in significant improvement in deployment speed and system reliability</li>
+          <li>Implemented secure network access solutions through RevBits Zero Trust Network, enhancing security for remote workers and reducing breach risks by 70%</li>
+          <li>Developed and deployed microservices architecture for enterprise-level applications, reducing system downtime and improving scalability</li>
+          <li>Architected AI-powered platforms using GPT models, LangChain, and RAG systems, delivering solutions trusted by 10,000+ businesses</li>
+          <li>Collaborated with cross-functional teams to deliver software solutions on time, contributing to increased customer satisfaction</li>
+          <li>Built offline AI models for session analysis with natural language query interfaces, enabling security teams to extract actionable insights</li>
+        </ul>
+      </div>
+      
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Full Stack Engineer</h3>
+          <span class="date">December 2019 - December 2020</span>
+        </div>
+        <div class="company">ArtBot | United States</div>
+        <ul class="achievements">
+          <li>Designed and implemented scalable full-stack applications, resulting in increased user engagement and improved performance</li>
+          <li>Integrated third-party APIs to enhance application functionality, improving overall user experience and system capabilities</li>
+          <li>Developed responsive web applications using modern JavaScript frameworks and cloud technologies</li>
+        </ul>
+      </div>
+      
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Full Stack Developer</h3>
+          <span class="date">September 2019 - December 2020</span>
+        </div>
+        <div class="company">ARSUM'S TECH | Sialkot, Pakistan</div>
+        <ul class="achievements">
+          <li>Contributed to significant decrease in bug reports through diligent development practices and comprehensive testing</li>
+          <li>Developed data scraping and processing systems for business intelligence, improving decision-making processes</li>
+          <li>Built full-stack applications using modern web technologies and best practices</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Key Projects -->
+    <div class="section">
+      <h2 class="section-title">Key Projects</h2>
+      
+      <div class="project-item">
+        <div class="project-header">
+          <h3>Mara Solutions</h3>
+          <span class="project-tag">AI-Powered Review Management Platform</span>
+        </div>
+        <div class="project-description">
+          Enterprise-grade AI platform automating hotel review aggregation, analysis, and intelligent response generation 
+          across 18+ platforms, reducing manual review response time by 65% for over 500 properties.
+        </div>
+        <ul class="project-highlights">
+          <li>Developed multi-model LLM system (GPT-4o, GPT-4.1, GPT-5) using LangChain for context-aware review responses with brand voice customization</li>
+          <li>Implemented RAG pipeline with "Ask Reviews Anything" feature using OpenAI embeddings and vector similarity search</li>
+          <li>Created custom fine-tuned GPT models for topic inference, improving accuracy by 40% over base models</li>
+          <li>Built AI pipeline for automatic extraction of reusable response snippets and GPT-5-powered brand voice system</li>
+          <li>Engineered AWS Batch jobs for review scraping and designed embeddable widgets with Cognito authentication</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Tech Stack:</strong> React, Nest.js, LangChain, GPT-4o, GPT-5, OpenAI API, RAG, Vector Embeddings, AWS Batch, AWS S3, AWS Cognito, PostgreSQL, TypeScript
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-header">
+          <h3>RevBits Privileged Access Management (PAM)</h3>
+          <span class="project-tag">AI-Enhanced Cybersecurity Platform</span>
+        </div>
+        <div class="project-description">
+          Unified, multi-module cybersecurity platform securing privileged credentials, sessions, and access across 
+          on-premises, cloud, and air-gapped environments.
+        </div>
+        <ul class="project-highlights">
+          <li>Built offline AI model system analyzing session logs (keystrokes, commands, video recordings) with continuous self-training</li>
+          <li>Developed natural language query interface enabling queries like "show me users who executed delete commands on SSH servers last week"</li>
+          <li>Led development of seven integrated modules including Privileged Access, Session, Password, and CI/CD secrets management</li>
+          <li>Implemented jump-server architecture and patented zero-knowledge browser encryption for enhanced security</li>
+          <li>Designed completely offline AI system ensuring data privacy and security compliance</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Tech Stack:</strong> Microservices, AI/ML, Offline AI Models, Natural Language Processing, Zero-Knowledge Encryption, MFA, SSO, AWS, Azure, GCP
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-header">
+          <h3>RevBits Zero Trust Network (ZTN)</h3>
+          <span class="project-tag">Enterprise Zero Trust Security Platform</span>
+        </div>
+        <div class="project-description">
+          Comprehensive Zero Trust platform replacing traditional VPNs with granular, least-privilege access controls, 
+          slashing breach risks by 70% while enabling frictionless access for remote teams.
+        </div>
+        <ul class="project-highlights">
+          <li>Built auto-scaling cloud architecture on GCP (Compute Engine, Cloud Run) with dynamic instance provisioning across multiple regions</li>
+          <li>Implemented Remote Browser Isolation (RBI) using containerized Chromium and Firefox with malicious site blocking</li>
+          <li>Developed lightweight ZTN agents establishing secure tunnels without exposing network topology</li>
+          <li>Integrated comprehensive MFA including biometrics (Face ID, Touch ID), U2F security keys, OTP, SMS, and SAML/SSO</li>
+          <li>Built secure database explorer supporting PostgreSQL, MySQL, MSSQL, and Cassandra with WebSocket-based real-time queries</li>
+          <li>Designed BYOD-friendly architecture enabling secure access from any device without VPN client installation</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Tech Stack:</strong> Angular, TypeScript, RxJS, Node.js, Express.js, WebSocket, PostgreSQL, Redis, GCP Compute Engine, Docker, Chromium, Firefox, Microservices
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-header">
+          <h3>Open Letter Connect</h3>
+          <span class="project-tag">Enterprise Direct Mail Automation Platform</span>
+        </div>
+        <div class="project-description">
+          Comprehensive direct mail automation platform trusted by 10,000+ businesses, seamlessly integrating with CRMs 
+          (HubSpot, Salesforce) to automate campaigns, achieving 84% ROI recognition and boosting response rates by up to 40%.
+        </div>
+        <ul class="project-highlights">
+          <li>Built seamless two-way sync with HubSpot and Salesforce, enabling automated workflows saving 50% execution time</li>
+          <li>Developed intuitive drag-and-drop template builder supporting multiple formats (postcards, letters, self-mailers)</li>
+          <li>Implemented USPS address verification system achieving 98% deliverability rate</li>
+          <li>Engineered variable data personalization system enabling personalized mailers with custom fields</li>
+          <li>Built comprehensive analytics dashboard with in-depth campaign tracking for real-time optimization</li>
+          <li>Designed scalable infrastructure with no limits on mailings, supporting campaigns from small tests to enterprise-scale</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Tech Stack:</strong> React, Nest.js, HubSpot API, Salesforce API, USPS API, AWS Batch, AWS S3, PostgreSQL, GitHub Actions, CI/CD, TypeScript
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h4>Bachelor's Degree in Computer Science</h4>
+        <p>University of Gujrat, Pakistan</p>
+      </div>
+      <div class="education-item">
+        <h4>Intermediate in FSc Pre-Engineering</h4>
+        <p>Govt College Daska, Sialkot, Pakistan</p>
+      </div>
+      <div class="education-item">
+        <h4>Matriculation in Physics</h4>
+        <p>Govt High School Daska, Sialkot, Pakistan</p>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-item">
+        <h4>JavaScript (Intermediate)</h4>
+        <p>HackerRank</p>
+      </div>
+      <div class="cert-item">
+        <h4>JavaScript (Basic)</h4>
+        <p>HackerRank</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

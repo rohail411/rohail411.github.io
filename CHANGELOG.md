@@ -236,7 +236,7 @@ All old library files remain for version control history but are no longer loade
 
 - **Email**: rohailbutt411@gmail.com
 - **Phone**: +923076497619
-- **LinkedIn**: [rohail-butt-496375149](https://www.linkedin.com/in/rohail-butt-496375149/)
+- **LinkedIn**: [rohail-butt-496375149](https://www.linkedin.com/in/rohail-butt/)
 - **GitHub**: [rohail411](https://github.com/rohail411)
 - **Stack Overflow**: [rohail-butt](https://stackoverflow.com/users/11267843/rohail-butt)
 - **Facebook**: [rohailbutt.rohailbutt.14](https://www.facebook.com/rohailbutt.rohailbutt.14)
